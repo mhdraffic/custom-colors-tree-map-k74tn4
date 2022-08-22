@@ -1,0 +1,9 @@
+<button *ngIf="back" (click)="backFunction()">Back</button>
+<ngx-charts-tree-map
+  [view]="view"
+  [scheme]="colorScheme"
+  [customColors]="customColors"
+  [results]="single"
+  (select)="onSelect($event)"
+>
+</ngx-charts-tree-map>
